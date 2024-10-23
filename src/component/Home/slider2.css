@@ -9,7 +9,7 @@
 :hover.swiper-button-prev,
 :hover.swiper-button-next {
     background-color: red;
-    color: azure;
+    /* color: azure; */
 }
 
 .swiper-button-prev::after,
@@ -20,11 +20,11 @@
 .swiper-button-prev::after,
 .swiper-button-next::after {
     font-size: 24px;
-    color: red;
+    color: black;
     font-weight: 900;
 }
 :hover.swiper-button-prev::after,
 :hover.swiper-button-next::after {
     font-size: 24px;
-    color: wheat;
+    color: #fff;
 }

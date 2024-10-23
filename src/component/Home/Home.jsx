@@ -1,4 +1,5 @@
 import Category from "./Category"
+import Ourstory from "./Ourstory"
 import Slider from "./Slider"
 import './home.css'
 
@@ -19,6 +20,7 @@ const Home = () => {
                     <Category></Category>
                 </div>
             </div>
+            <Ourstory></Ourstory>
         </section>
     )
 }
