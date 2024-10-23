@@ -1,0 +1,30 @@
+.swiper-button-prev,
+.swiper-button-next {
+    border: 2px solid red;
+    padding: 30px;
+    border-radius: 100%;
+
+}
+
+:hover.swiper-button-prev,
+:hover.swiper-button-next {
+    background-color: red;
+    color: azure;
+}
+
+.swiper-button-prev::after,
+.swiper-rtl .swiper-button-next::after {
+    content: 'prev';
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 24px;
+    color: red;
+    font-weight: 900;
+}
+:hover.swiper-button-prev::after,
+:hover.swiper-button-next::after {
+    font-size: 24px;
+    color: wheat;
+}

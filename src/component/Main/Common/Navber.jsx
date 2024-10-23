@@ -1,6 +1,8 @@
 import { useState } from 'react';
-import {  FaChevronRight } from 'react-icons/fa';
-import { IoMenu, IoTimeOutline } from 'react-icons/io5';
+import { CiLinkedin } from 'react-icons/ci';
+import { FaChevronRight, FaFacebookF, FaInstagram, FaPhoneAlt, FaShoppingCart } from 'react-icons/fa';
+import { IoLogoTwitter, IoMenu, IoTimeOutline } from 'react-icons/io5';
+import { MdAttachEmail } from 'react-icons/md';
 import { RxCross2 } from 'react-icons/rx';
 
 const Navber = () => {
@@ -13,9 +15,37 @@ const Navber = () => {
     const [isOpen2, setIsOpen2] = useState(false);
 
     return (
-        <section className='bg-[#0F1012]'>
-            <div className='main_container'>
-                <header className='flex shadow-md py-4 px-4 sm:px-10 font-[sans-serif] min-h-[70px] tracking-wide relative z-50'>
+        <section className='bg-[#0F1012] navigation'>
+        
+     
+            <div className='pt-5 sticky hidden'>
+                <div className=''></div>
+                <div className='main_container flex items-center justify-between border-b mb-2'>
+                    <div className='pb-2'>
+                        <div className='flex gap-5'>
+                            <p className='flex gap-3 items-center text-white'>   <MdAttachEmail className='text-custom-red' />  info@takumibd.com</p>
+                            <p className='flex gap-3 items-center text-white'>  <FaPhoneAlt className='text-custom-red' />
+                                info@takumibd.com</p>
+                        </div>
+                    </div>
+                    <div className='flex gap-5 items-center pb-2'>
+                        <div className='flex gap-4'>
+                            < FaFacebookF className='text-white text-xl' />
+                            < IoLogoTwitter className='text-white text-xl' />
+                            < FaInstagram className='text-white text-xl' />
+                            < CiLinkedin className='text-white text-xl' />
+                        </div>
+                        <div>
+                            <button className='text-xl text-white'> | Login |</button>
+                        </div>
+                        <div className='flex pb-2'>
+                            <FaShoppingCart className='text-xl text-white flex mt-2' />  <span className='bg-red-800 ml-1 px-2  py-[2px] rounded-full text-white'>0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='main_container scroll-behavior:fixed top-0 left-0 right-0'>
+                <header className='flex shadow-md py-4  font-[sans-serif] min-h-[70px] tracking-wide'>
                     <div className='flex flex-wrap items-center justify-between gap-5 w-full'>
                         <a href="javascript:void(0)">
                             <img src="https://takumibd.com/assets/front/img/624921a7199ec.jpg" alt="logo" className='w-16' />
@@ -48,8 +78,8 @@ const Navber = () => {
                                         <div className="flex items-center justify-between space-x-2 ">
                                             <a href='#' className='hover:text-blue-500 text-black lg:text-white  block  uppercase font-semibold text-[14px]'>Team</a>
                                             <span>
-                                            <FaChevronRight className='text-sm text-black lg:text-white rotate-90'  />
-                                              
+                                                <FaChevronRight className='text-sm text-black lg:text-white rotate-90' />
+
                                             </span>
                                         </div>
                                         <div className="invisible absolute z-50 lg:mt-0 mt-3 flex w-full -ml-4 lg:-ml-0 lg:w-56 flex-col bg-gray-100   text-gray-800 shadow-xl group-hover:visible">
@@ -93,18 +123,18 @@ const Navber = () => {
                                     <div className="group relative cursor-pointer">
                                         <div className="flex items-center justify-between space-x-2 ">
 
-                                            
+
                                             <a href='#' className='hover:text-blue-500 text-black lg:text-white  block  uppercase font-semibold text-[14px]'>About</a>
                                             <span>
-                                            <FaChevronRight className='text-sm text-black lg:text-white rotate-90'  />
+                                                <FaChevronRight className='text-sm text-black lg:text-white rotate-90' />
                                             </span>
                                         </div>
                                         <li>
 
                                             <ul>
-                                        
+
                                                 <li>
-                                                <div className="invisible absolute z-50 lg:mt-0 mt-3 flex  -ml-4 lg:-ml-0 lg:w-56 flex-col bg-gray-100   text-gray-800 shadow-xl group-hover:visible">
+                                                    <div className="invisible absolute z-50 lg:mt-0 mt-3 flex  -ml-4 lg:-ml-0 lg:w-56 flex-col bg-gray-100   text-gray-800 shadow-xl group-hover:visible">
 
                                                         <li
                                                             onMouseEnter={() => setIsOpen(true)}

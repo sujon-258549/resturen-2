@@ -1,0 +1,24 @@
+.home {
+    background: url('../../../public/home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 500 !important; 
+    position: relative;
+}
+.home2 {
+    background:  url('../../../public/5f5a03b9351d9.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 500 !important; 
+    position: relative;
+    height: 100px;
+    width: 100%;
+}
+
+.home img {
+    position: relative;
+    z-index: -1;
+}
+
