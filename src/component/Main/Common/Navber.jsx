@@ -58,7 +58,7 @@ const Navber = () => {
                         >
                             <button
                                 id="toggleClose"
-                                className='lg:hidden fixed top-6 border right-[36px] md:right-[60px] rounded-full bg-white p-2' style={{ zIndex: '999' }}
+                                className='lg:hidden fixed top-[34px] md:top-[34px] border right-[20px] md:right-[20px] rounded-full bg-white p-2' style={{ zIndex: '999' }}
                                 onClick={toggleMenu}
                             >
                                 <RxCross2 className='text-3xl text-black' />

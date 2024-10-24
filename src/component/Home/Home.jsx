@@ -1,6 +1,12 @@
 import Category from "./Category"
+import Homecontact from "./Homecontact"
+import Hometext from "./Hometext"
+import Map from "./Map"
+import OurBlog from "./OurBlog"
+import Ourmenu from "./Ourmenu"
 import Ourstory from "./Ourstory"
 import Slider from "./Slider"
+import Slider3 from "./Slider3"
 import './home.css'
 
 const Home = () => {
@@ -21,6 +27,18 @@ const Home = () => {
                 </div>
             </div>
             <Ourstory></Ourstory>
+            <Homecontact></Homecontact>
+            <Ourmenu></Ourmenu>
+            <div className="lg:flex gap-5 items-center main_container py-10 md:py-20">
+                <div className="lg:w-[65%]">
+                    <Slider3></Slider3>
+                </div>
+                <div className="lg:w-[35%]">
+                    <Hometext></Hometext>
+                </div>
+            </div>
+            <OurBlog></OurBlog>
+            <Map></Map>
         </section>
     )
 }

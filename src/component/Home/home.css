@@ -16,6 +16,16 @@
     height: 100px;
     width: 100%;
 }
+.text {
+    background:  url('../../../public/text.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* z-index: 500 !important; 
+    position: relative;
+    height: 100px;
+    width: 100%; */
+}
 
 .home img {
     position: relative;
