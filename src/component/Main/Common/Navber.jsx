@@ -4,6 +4,7 @@ import { FaChevronRight, FaFacebookF, FaInstagram, FaPhoneAlt, FaShoppingCart } 
 import { IoLogoTwitter, IoMenu, IoTimeOutline } from 'react-icons/io5';
 import { MdAttachEmail } from 'react-icons/md';
 import { RxCross2 } from 'react-icons/rx';
+import { NavLink } from 'react-router-dom';
 
 const Navber = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,8 +17,8 @@ const Navber = () => {
 
     return (
         <section className='bg-[#0F1012] navigation'>
-        
-     
+
+
             <div className='pt-5 sticky hidden'>
                 <div className=''></div>
                 <div className='main_container flex items-center justify-between border-b mb-2'>
@@ -69,7 +70,10 @@ const Navber = () => {
                                     }`}
                             >
                                 <li className='max-lg:border-b font-playfair border-gray-300 max-lg:py-2 px-3'>
-                                    <a href='#' className='hover:text-blue-500 text-blue-500 block  uppercase font-semibold text-[14px]' aria-current="page">Home</a>
+                                    <NavLink href='#' to={'/'} className='hover:text-blue-500 text-blue-500 block  uppercase font-semibold text-[14px]' aria-current="page">Home</NavLink>
+                                </li>
+                                <li className='max-lg:border-b font-playfair border-gray-300 max-lg:py-2 px-3'>
+                                    <NavLink href='#' to={'/menu'} className='text-white block  uppercase font-semibold text-[14px]' aria-current="page">Menu</NavLink>
                                 </li>
                                 <li className='max-lg:border-b font-playfair border-gray-300 max-lg:py-3 px-2'>
 
@@ -110,12 +114,6 @@ const Navber = () => {
                                     </div>
 
 
-                                </li>
-                                <li className='max-lg:border-b font-playfair border-gray-300 max-lg:py-3 px-3'>
-                                    <a href='#' className='hover:text-blue-500 text-black lg:text-white  block  uppercase font-semibold text-[14px]'>Feature</a>
-                                </li>
-                                <li className='max-lg:border-b font-playfair border-gray-300 max-lg:py-3 px-2'>
-                                    <a href='#' className='hover:text-blue-500 text-black lg:text-white  block  uppercase font-semibold text-[14px]'>Blog</a>
                                 </li>
                                 <li className='max-lg:border-b font-playfair border-gray-300 max-lg:py-3 px-2'>
 
@@ -269,6 +267,11 @@ const Navber = () => {
 
 
                                 </li>
+                               
+                                <li className='max-lg:border-b font-playfair border-gray-300 max-lg:py-3 px-2'>
+                                    <a href='#' className='hover:text-blue-500 text-black lg:text-white  block  uppercase font-semibold text-[14px]'>Blog</a>
+                                </li>
+
                                 <li className='max-lg:border-b font-playfair border-gray-300 max-lg:py-3 px-2'>
                                     <a href='#' className='hover:text-blue-500 text-black lg:text-white  block  uppercase font-semibold text-[14px]'>Contact</a>
                                 </li>
