@@ -1,5 +1,6 @@
 import CommonBannerText from "../Main/Common/CommonBannerText"
 import Scorlmenu from "./Scorlmenu";
+import SelectComponent from "./SelectComponent";
 const menus = [
     { name: "Karaage", category: "Single Item", description: "からあげ", price: 450.00 },
     { name: "Chicken Nanban", category: "Single Item", description: "チキン南蛮", price: 450.00 },
@@ -97,16 +98,18 @@ const menus = [
     { name: "Hot Sake", category: "Drinks", description: "Warm rice wine.", price: 500.00 },
     { name: "Cold Sake", category: "Drinks", description: "Chilled rice wine.", price: 500.00 },
     { name: "Soft Drink", category: "Drinks", description: "", price: 150.00 },
-  ];
-  
+];
+
 
 const Menu = () => {
-  return (
-    <div>
-      <CommonBannerText bannertext={'Our Menu'} subtext={'Menu'}></CommonBannerText>
-      <Scorlmenu></Scorlmenu>
-    </div>
-  )
+    return (
+        <div>
+            <CommonBannerText bannertext={'Our Menu'} subtext={'Menu'}></CommonBannerText>
+            <SelectComponent></SelectComponent>
+            <Scorlmenu></Scorlmenu>
+
+        </div>
+    )
 }
 
 export default Menu
