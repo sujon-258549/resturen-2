@@ -1,0 +1,6 @@
+.sticky-element {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 999 !important;
+  }
+  
