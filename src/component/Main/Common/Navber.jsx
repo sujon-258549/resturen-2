@@ -47,7 +47,7 @@ const Navber = () => {
                     </div>
                 </div>
             </div>
-            <div className=''>
+            <div className='sticky top-0 z-50'>
                 <div className='main_container scroll-behavior:fixed top-0 left-0 right-0'>
                     <header className=" flex shadow-md py-4 font-[sans-serif] min-h-[70px] tracking-wide">
                         <div className='flex flex-wrap items-center justify-between gap-5 w-full'>
