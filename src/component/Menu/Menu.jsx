@@ -1,4 +1,5 @@
 import CommonBannerText from "../Main/Common/CommonBannerText"
+import Dropdown from "../Main/Common/Dropdown";
 import Scorlmenu from "./Scorlmenu";
 import SelectComponent from "./SelectComponent";
 const menus = [
@@ -107,7 +108,9 @@ const Menu = () => {
             <CommonBannerText bannertext={'Our Menu'} subtext={'Menu'}></CommonBannerText>
             <SelectComponent></SelectComponent>
             <Scorlmenu></Scorlmenu>
-
+            <div className="mx-auto flex justify-center">
+                <Dropdown />
+            </div>
         </div>
     )
 }
